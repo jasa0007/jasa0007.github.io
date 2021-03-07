@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Assg-3</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Emina Jasarevic">
+</head>
+<body>
+	<div id="Information" class="Information">
+		<section id="Info-forms" class="Infosection">
+			<form action="somepage.php" method="get">
+				<!-- Start of First Name label, Input as "text". Added placeholder for pseudo text and added required list -->
+				<div id="first" class="namefield">
+					<label for="firstname">First name</label>
+					<input type="text" name="firstname" id="firstname" placeholder="Enter your First Name here" required>
+					<!-- End of the First Name Label -->
+				</div>
+				<!-- Start of Last Name label, similar structure to the First Name -->
+				<div id="Last" class="namefield">
+				    <label for="lastName">Last Name</label>
+					<input type="text" name="LastName" id="lastName" placeholder="Enter your Last Name here" required>
+					<!-- End of Last Name label -->
+				</div>
+				<!-- Start of Email label and added an "email" input. Is also required before submitting. -->
+				<div id="email" class="Infofield">
+					<label for="email01">Email</label>
+					<input type="email" name="email" id="email01" placeholder="example@g.com" required>
+					<!-- End of Email label -->
+				</div>
+				<!-- start of Password label with the "email" input -->
+				<div id="password" class="Infofield">
+					<label for="pass">Password</label>
+					<input type="password" name="pass" id="pass" required>
+					<!-- End of Password label -->
+				</div>
+				<!-- Start of Introductory Text with a textarea tag to allow more than one line information -->
+				<div id="introductory" class="Infofield">
+							<label for="introductoryText">Introductory Text</label>
+							<textarea name="introductoryText" id="introductoryText" placeholder="Enter summary here">
+								Write Introdution Here
+							</textarea>
+							<!-- End of Introductory Text label -->
+				</div>
+				<!-- Start of Date of Birth lable with a "date" input -->
+				<div id="dateinfo" class="numberfield">
+				<label for="date">Date of Birth</label>
+							<input type="date" name="birth" id="date">
+							<!-- End of Date of Birth label -->
+				</div>
+				<!-- Start of Mobile Number label with "number" input type -->
+				<div id="mobileinfo" class="numberfield">
+					<label for="num">Mobile Number</label>
+					<input type="number" id="num" name="mobilenumber" required placeholder="XXX-XXX-XXXX"><br>
+				<!-- End of Mobile Number label -->
+				</div>
+				<!-- Start of Gender label with the "radio" input, added the checked for for female. -->
+				<div id="gender" class="optionfield">
+				    <p>Gender</p>
+					<label for="female">
+					<input type="radio" name="opt-form" id="female" value="female" checked>
+					Female
+					</label>
+					<label>
+					<input type="radio" name="opt-form" id="male" value="male">
+					Male
+							</label><br><br>
+					<!-- End of Gender label -->
+				</div>
+				<!-- Start of the Address label with the "text" Input -->
+				<div id="addressinfo" class="Infofield">
+					<label for="addr">Address</label>
+					<input type="text" name="addressname" id="addr" placeholder="Address goes here">
+					<!-- End of Address label -->
+				</div>
+				<!-- Start of the City label with "text" input -->
+				<div id="cityname" class="optionfield">
+					<label for="city">City</label>
+					<input type="text" name="cityname" id="city">
+					<!-- End of City label -->
+				</div>
+				<!-- Start of the Province Label -->
+				<div id="province-drop" class="Infofield">
+						<label for="province">Province:</label>
+						<!-- Select tag to make the dropdowns -->
+						<select name="prodrop" id="province">
+							<!--added optgroup tag to create one group of the elements -->
+						    <optgroup label="Provinces">
+						    	<!-- added options tags for each values -->
+								<option value="ontario" selected>Ontario</option>
+								<option value="quebec">Quebec</option>
+								<option value="newfoundland_and_labrador">Newfoundland and Labrador</option>
+								<option value="nova_scotia">Nova Scotia</option>
+								<option value="alberta">Alberta</option>
+								<option value="british_columbia">British Columbia</option>
+								<option value="manitoba">Manitoba</option>
+								<option value="new_brunswick">New Brunswick</option>
+								<option value="prince_edward_island">Prince Edward Island</option>
+								<option value="saskatchewan">Saskatchewan</option>
+								<option value="northwest_territories">Northwest Territories</option>
+								<option value="nunavut">Nunavut</option>
+								<option value="yukon">Yukon</option>
+							</optgroup>
+						</select>
+						<!-- End of Province label -->
+				</div>
+				<!-- Start of Country label, similar with Provinces -->
+				<div id="country-drop" class="optionfield">
+						<label for="country">Country:</label>
+						<select name="contdrop" id="country">
+							<optgroup label="countries">
+								<option value="canada" selected>Canada</option>
+								<option value="bosnia">Bosnia</option>
+								<option value="usa">USA</option>
+							</optgroup>
+						</select>
+				<!-- End of Country label -->
+				</div>
+				<!-- Start of Postal Code label -->
+				<div id="postcode" class="Infofield">
+					<label for="postal">Postal Code</label>
+					<input type="text" name="postname" id="postal" placeholder="XXXXXX">
+				<!-- End of Postal code label -->
+				</div>
+				<!-- Start of Hobbies/Interests heading -->
+				<div id="hobbies" class="infofield">
+					<h3>Hobbies/Interests:</h3>
+							<!-- each label is on the checkbox input and added checked with reading -->
+							<label for="reading">Reading</label>
+							<input type="checkbox" name="hobby" id="reading" value="reading" checked> <br>
+
+							<label for="sports">Sports</label>
+							<input type="checkbox" name="hobby" id="sports" value="sports"> <br>
+
+							<label for="gardening">Gardening</label>
+							<input type="checkbox" name="hobby" id="gardening" value="gardening"> <br>
+
+							<label for="writing">Writing</label> 
+								<input type="checkbox" name="hobby" id="writing" value="writing"><br>
+							<label for="history">History</label>
+							<input type="checkbox" name="hobby" id="history" value="history"> <br>
+							<label for="art">Art</label>
+							<input type="checkbox" name="hobby" id="art" value="art"> <br>
+							<label for="travel">Travel</label>
+							<input type="checkbox" name="hobby" id="travel" value="travel"> <br>
+				<!-- End of Hobbies/Interests heading -->				
+				</div>
+				<!-- Start of the Website label with the "url" input -->
+				<div id="website" class="sitefield">
+					<label for="website02">Website</label>	
+					<input type="url" name="site" id="website02" ><br>
+					<!-- End of Website label -->
+				</div>
+				<!-- Button Tags for Submit and Reset -->
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+				<!-- end of Button Tags -->
+			</form>
+		</section>
+	</div>		
+			
+</body>
+</html>
