@@ -1,79 +1,252 @@
-<!-- html tag is called the root tag , as all of the html code resides within this tag -->
-<html>
-<!-- This is a comment -->
-<!-- this is another comment -->
-<!-- Sublime Text shortcut to create a shortcut is ctrl+/ -->
-
-	<head>
-
-		<!-- meta tags allow you to add additional information for the browser so as to enable it to interpret your document easily -->
-		<!-- meta tags allow you to add the propery and specify its value -->
-		<!-- here "charset" is the property and "utf-8" is the value -->
-		<!-- meta tag is an example of self closing tags -->
-		<meta charset="utf-8">
-		<!-- another way of writing meta tags is using name and content -->
-		<!-- name specifies the property and content specifies the value -->
-		<meta name="Author" content="Winnerjit Rator">
-
-		<!-- the head element contains the information about the current document, such as title, keywords, description and other data that is not considered document content. -->
-
-		<!-- title tag is used to give HTML document a human readbable title, which is interpreted by the browser and is shown in the tab displaying this document -->
-
-		<!-- Note: title must always be present in the HEAD element -->
-		<title>Week 2 Class - Intro to HTML</title>
-	</head>
-	<!-- to write any child tag, make sure to use indentation which is achived by pressing tab once,before writing the child tag, eg. here being body tag -->
-
-	<body>
-		<!-- A body tag is called the main container for HTML document, and it contains all the content of the web page -->
-
-		<!-- heading tag or h tags are used to specify the heading in the content of a document -->
-		<!-- heading tag ranges from <h1> to <h6> -->
-		<!-- The heading variantion is based upon importance -->
-		<!-- Note: <h1> tag has the highest importance where as <h6> has the least -->
-		<!-- Heading tag is also a block level element -->
-		<h1>Week 1 - Intro to HTML</h1>
-		<h2>Basic HTML tags</h2>
-		This is my content
-		<!-- Any line breaks that are specfied outside the block level elements will not be rendered in the document  -->
-
-
-
-
-		This is additional content 
-		<!-- paragraph or p tag is used to create paragrphs in your document -->
-		<!-- NOte : paragraph tag is an example of block level element -->
-		<p>This is a paragraph</p>
-		<p>This is another paragraph</p>
-
-		<p>
-			This is the first line
-			<!-- br or break tag is used to create a break in a pragraph -->
-			<!-- break tag is also called line break for html -->
-			<!-- the number of br tags will specify the number of line breaks -->
-			<br>
-			<br>
-			This is the second line
-		</p>
-
-		<!-- ul tag is one of the tags that is used to create lists in an html document -->
-		<!-- ul is short for unordered list which means it would create lists with bullet points -->
-		<ul>
-			<!-- li tag or list tag is used to create list elements for a list in html document -->
-			<!-- Note: <li> must be a child of <ul> tag to work and render properly -->
-			<li>List element 1</li>
-			<li>List element 2</li>
-		</ul>
-		<!-- ol is used to create ordered list in a html document -->
-		<ol>
-			<li>Ordered List 1</li>
-			<li>Ordered list 2</li>
-			<li>
-				<!-- list elements can take other block level elements as their children -->
-				<!-- <strong> tag is used to make a text bold while increasing its relavance and importance -->
-				<p>This is <strong>paragraph</strong> inside list element</p>
-				<p>This is another <strong>paragraph</strong></p>
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<title>LIB2024 - QA Emina</title>
+</head>
+<body>
+	<h1>LIB2024- QA Emina</h1>
+	<!-- Qus/Ans list begins -->
+	<ol>
+		<!-- Qus 1 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				What are the three componets of Web?
+			</p>
+			<p>
+				<strong>Ans: </strong>
+				Ans: HTML, CSS and Javascript
+		</p></li>
+		<!-- Qus 2 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Define version control and give one example.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: Version Control is a system that records changes file or set of files overtime so you can recall a specific versions later. Example is GitHub, Mercurial and Seleniam 
+			</p></li>
+			<!-- Qus 3 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				What tag is used to create the title of a web page? Give an example.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: That would be the &lt;title&gt;tag. Example &lt;title&gt; Imput Title Here &lt;/title&gt;
+			</p>
 			</li>
-		</ol>
-	</body>
+			<!-- Qus 4 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				What tag is used to create a paragraph in html? Give an example.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: That would be the &lt;p&gt; tag. Example, &lt;p&gt; Insert Paragraph  &lt;/p&gt; 
+			</p>
+		</li>
+		<!-- Question 5 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				 Identify the odd one from these tags:  &lt;span&gt;,  &lt;p&gt;,  &lt;a&gt;,  &lt;i&gt;  and state the reason?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: the  &lt;p&gt; tag is the only tag to not effect any existing element.
+			</p>
+		</li>
+		<!-- Question 6 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				 What are the tags required to create a navigation list in HTML? 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: The required tags are &lt;ul&gt; and &lt;li&gt;
+			</p>
+		</li>
+		<!-- Question 7-->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				 What element is used to create images? Name its attributes.  
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: That would be the &lt;img&gt; and its attributes are src, alt, width and height.
+			</p>
+		</li>
+		<!-- Question 8 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				  Identify the odd one from these tags: &lt;table&gt;, &lt;tr&gt;, &lt;b&gt;, &lt;td&gt;  and state the reason
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: The &lt;b&gt; tag is not an element which effects table layout. 
+			</p>
+		</li>
+		<!-- Question 9 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				  Give an example of color picker input. 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: &lt;input type="color" name="co" id="co"&gt;
+			</p>
+		</li>
+		<!-- Question 10-->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				  What is the use of name and value attributes? Give two examples 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: To be able to call interactive elemets like text fields and get thier stored value. 
+				 First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+                 &lt;input type="button" value="button"&gt;
+			</p>
+		</li>
+		<!-- Question 11 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				  Give an example of inline style. 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: &lt;p style="color:red;font-size:22px;"&lt;
+			</p>
+		</li>
+		<!-- Question 12 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				  How would you link an external style sheet? Give example.  
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: it would be under the head tag as &lt;link rel="stylesheet" type="text/css" href="css/style.css"&lt;
+			</p>
+		</li>
+		<!-- Question 13 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				  Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.   
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: position: absolute; <br>
+						left: 50%; <br>
+						top: 50%; <br>
+						width: 200px; <br>
+						height: 200px; <br>
+						margin: -100px 0 0 -100px; 
+			</p>
+		</li>
+		<!-- Question 14 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				  Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px.   
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Ans: position: absolute; <br>
+						left: 50%; <br>
+						top: 50%; <br>
+						width: 200px; <br>
+						height: 200px; <br>
+						margin: -100px 0 0 -100px;
+			</p>
+		</li>
+		<!-- Question 15 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				  Create CSS animation block to rotate an element that has the following properties :
+
+				class "rotate-me"
+				It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"
+			</p>
+			<p>
+				<strong>Ans:</strong>
+						.rotate me { <br>
+						animation: <br>
+						spin 0.5s linear 5x, <br>
+						}
+						@keyframes spin { <br>
+						from { <br>
+						transform: rotate(0deg); <br>
+						} <br>
+						to { <br>
+						transform: rotate(360deg); <br>
+						} <br>
+						
+			</p>
+		</li>
+		<!-- Question 16 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				   How would you include create an alert with string "I love JavaScript" using JavaScript?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				.alert("I love JavaScript");
+			</p>
+			<!-- Question 17 -->
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				   How would you fade out an element with id "fade-me" after a delay of 300ms using JQuery?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				 $('.fade-me').delay(300).fadeOut(300)
+			</p>
+			<!-- Question 18 -->
+			<li>
+			<p>
+				<strong>Qus:</strong>
+				   How would you select all elements with class "my-class" using Javascript and Jquery?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				 document.getElementsByClassName("my-class");
+			</p>
+			<!-- Question 19 -->
+			<li>
+			<p>
+				<strong>Qus:</strong>
+				   Give an example of input field that takes phone number with format "123-456-7890"?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				 &lt;input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required&gt;
+			</p>
+			<li>
+				<!-- Question 20-->
+			<p>
+				<strong>Qus:</strong>
+				   Among HTML, CSS, Javascript, JQuery, what language did you like the best? State the reason
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				 Probably HTML because it was the less stressful to understand than the other two. I had a better understanding what does what and I actaully enjoyed doing it. 
+			</p>
+  </ol>
+</body>
 </html>
