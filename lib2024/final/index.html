@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="utf-8"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet"  href="css/font">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<title>Final</title>
+</head>
+<body class="body">	
+	<!--header start-->
+	<header class="topHeader" id="header">
+		<h1>MY LOGO</h1>
+	</header>
+	<!--header end-->
+	<!--main start-->
+	<main class="mainHeader">
+		
+			<!--start nav 1 for navigation bar-->
+			<nav class="navigation">
+				<a class="navLink" href="home.html">HOME</a>
+
+				<a class="navLink" href="about-us.html">ABOUT</a>
+
+				<a class="navLink" href="schedule.html">SCHEDULE</a>
+
+				<a class="navLink" href="portfolio.html">PORTFOLIO</a>
+
+				<a class="navLink" href="contact-us.html">CONTACT</a>
+			</nav>
+		<!--end nav 1-->
+		<!--start div 1 for main content-->
+		<div class = "paragraph">
+		<section class="article">
+			<div class="intro">
+				<h2>ABOUT</h2>
+				<p><img class="image" src="img/image-1.jpg" alt="flowers">Lorem ipsum dolor sit amet, eu posuere molestias ut, rhoncus eros tortor, convallis pariatur lacus ipsum ornare mollis. Lacus mi consectetuer pede nec pulvinar, curae tortor, cras enim arcu elit risus justo justo, at euismod at lobortis. Suspendisse dui auctor commodo volutpat sit. Accumsan penatibus malesuada at amet tincidunt, nulla elit nulla vehicula fusce cras, aenean quisque eros duis magna ac neque, a at, urna ultrices sit sodales morbi. Rhoncus et justo, euismod libero aenean ac lacus tortor wisi. Tempus nibh volutpat facilisi nulla, enim sed lacus dolor velit, rhoncus eros vel. Vitae non neque, condimentum suspendisse velit volutpat, pellentesque nisl justo arcu. Consectetuer mollis in sociosqu morbi fusce cras, in vitae tortor in. Erat quam, id mi leo elementum non felis, et eget fermentum. Fermentum molestie ante velit.</p>
+				<br>
+				<p>Ac massa, ipsum pulvinar voluptate, maecenas sit neque imperdiet nec. Congue tempor mattis, nulla urna turpis elit faucibus ridiculus, risus et sit, ut libero et sodales suscipit, proin quam nobis accumsan eget dolor. Dui eget non nonummy tempus, cum luctus, ac erat magna. Tristique faucibus morbi, voluptate diam ullamcorper, adipiscing sodales urna ac felis sapien porttitor, phasellus et, dictumst sociosqu justo. Eu sit sit suscipit enim, eu amet maecenas interdum integer est metus, per sapien nulla velit purus neque volutpat, vestibulum commodo eget dictum nisl porttitor, pellentesque duis molestie. Sed ac scelerisque maecenas sed faucibus vestibulum, mollis ut est, interdum dui. Leo nonummy magna, luctus a in nunc aliquam volutpat interdum, nec quisque purus, dolor et vestibulum fusce</p>
+			</div>
+			<!--end div 1-->
+			<!--start div 2-->
+			<div>
+				<h2>SCHEDULE</h2>
+				<table style="width: 90%">
+					<thead>
+						<tr>
+							<th>TIME</th>
+							<th>MONDAY</th>
+							<th>TUESDAY</th>
+							<th>WEDNESDAY</th>
+							<th>THURSDAY</th>
+							<th>FRIDAY</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>09:00-11:00</td>
+							<td>Communications 1</td>
+							<td>Client Services</td>
+							<td>Special Collections</td>
+							<td>Directed Research Seminar</td>
+							<td>Client Services</td>
+						</tr>
+						<tr>
+							<td>11:00-12:30</td>
+							<td>Reference</td>
+							<td>Internet App</td>
+							<td>Library Software</td>
+							<td>French</td>
+							<td>Reference</td>
+						</tr>
+						<tr>
+							<td>14:00-15:00</td>
+							<td>Acquisitions</td>
+							<td>General Elective</td>
+							<td>Marketing</td>
+							<td>Emerging Library Tech</td>
+							<td>Library Software</td>
+						</tr>
+						<tr>
+							<td>15:30-17:30</td>
+							<td>French</td>
+							<td>French</td>
+							<td>Aquisitions</td>
+							<td>Subject Analysis</td>
+							<td>Internet App</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+			<!--end div 2-->
+			<!--start form-->
+		<section class="infoSection">
+			<form class="infoOpt" id="infoBox" onsubmit="javascriptInteractivity()">
+				<h2>EDIT PROFILE</h2>
+				<div>
+					<strong>Name:</strong><input type="text" name="name" placeholder="Name Goes Here" id="inputName" required>
+				</div>
+				<br>
+				<div>
+					<strong>Email:</strong><input type="email" placeholder="email@example.com" id="inputEmail" required>
+				</div>
+				<br>
+				<div>
+					<strong>Address:</strong><input type="text" name="address" placeholder="Address Goes Here" id="inputAddress" required>
+				</div>
+				<br>
+				<div>
+					<strong>City:</strong><input type="text" name="city" placeholder="City Goes Here" id="inputCity" required>
+				</div>
+				<br>
+				<div>
+					<strong>Province:</strong>
+					<select name="province" id="inputProvince" required>
+						<option value="">Select Province</option>
+						<option value="AL">Alberta</option>
+						<option value="BC">British Columbia</option>
+						<option value="MB">Manitoba</option>
+						<option value="NB">New Brunswick</option>
+						<option value="NF">Newfoundland</option>
+						<option value="NS">Nova Scotia</option>
+						<option value="NWT">NorthWest Territories</option>
+						<option value="NU">Nunavut</option>
+						<option value="ON">Ontario</option>
+						<option value="PEI">Prince Edward Island</option>
+						<option value="QU">Quebec</option>
+						<option value="SAS">Saskatchewan</option>
+						<option value="YU">Yukon</option>
+					</select>
+				</div>
+				<br>
+				<div>
+					<strong>Postal Code:</strong><input type="text" name="postcode" placeholder="XXX XXX" id="inputPostCode" required>
+				</div>
+				<br>
+				<input type="submit" value="submit" id="submitBut">	
+			</form>
+			
+			<h2>PROFILE INFO</h2>
+			<div class="infoEx">
+				<img src="img/image-2.png" width="135" height="135" alt="profile picture">
+				<p id="name">John Doe</p>
+				<p id="email">JohnDoe@algonquincollege.com</p>
+				<p id="address">1385 Woodroffe Ave</p><p id="city">Nepean,</p><P id="province">ON,</P><p id="postcode">K2G 1V8</p>
+				<img src="img/image-3.png" width="40" height="25" alt="letter">
+			</div>
+		
+		</section>	
+
+	</div>
+
+	</main>
+	
+	<footer class="footer" id="footer">
+		<section class="botHeader">
+
+			<h3>QUICK LINKS</h3>
+			<nav class="left">
+				<a class="navLink" href="schedule.html">SCHEDULE</a><br><br>
+				<a class="navLink" href="about-us.html">ABOUT</a><br><br>
+				<a class="navLink" href="portfolio.html">PORTFOLIO</a><br><br>
+				<a class="navLink" href="contact-us.html">CONTACT</a>
+			</nav>
+			
+			<nav class="left">
+				<h3>FOLLOW US</h3>
+				<div class="footerRight">
+				<a href="https://www.facebook.com/"><img class="socialMediaLogo" src="img/facebook.png" alt="Facebook logo"></a>
+				<a href="https://www.youtube.com/"><img class="socialMediaLogo" src="img/youtube.png" alt="Youtube logo"></a>
+				<a href="https://twitter.com/"><img class="socialMediaLogo" src="img/twitter.png" alt="Twitter logo"></a>
+
+			</div>
+			</nav>
+			
+			<div class="left">
+				<h3>ADDRESS</h3>
+				<p>1385 Woodroffe Ave,<br>Nepean, ON K2G 1V8<br>Canada</p>
+			</div>
+			
+		</section>
+	</footer>
+	
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

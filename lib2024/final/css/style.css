@@ -1,0 +1,166 @@
+/* Custom, iPhone Retina */ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+
+	line-height: 1;
+	 max-width: 2000px;
+	 margin: 0 auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@media only screen and (max-width: 768px){
+
+}
+
+   
+	p {
+		font-family: 'sinkin_sans100_thin';
+	}
+	.topHeader {
+		width: 100%;
+	}
+	.mainHeader {
+		width: 100%;
+		padding-bottom: 10%;
+		background-image: url("../img/leaves.png");
+	}
+	.paragraph {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	h1 {
+		margin-left: 5%;
+		color: #72a9ae;
+	}
+	h2 {
+		color: #72a9ae;
+	}
+	h3 {
+		color: #ffffff;
+	}
+	.navigation {
+		width: 100%;
+		height: 35px;
+		background-color: #72a9ae ;
+		padding-top: 1%;
+		text-align: left;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  opacity: 0.6;
+		  transition: 0.3s;
+	}
+	.navigation:hover {opacity: 1}
+	.NavLink {
+		padding-left: 5%;
+		margin-right: 100px;
+		color: #000000;
+	}
+	.image {
+		height: 300px;
+		width: 30%;
+		float: right;
+		padding: 10px;
+	}
+
+	.image.hover {
+		height: 500px;
+		width: 50%;
+	}
+	table, td, th {
+		border-collapse: collapse;
+		border: 1px solid black;
+		font-family: sinkin_sans100_thin;
+		text-align:center;
+	}
+
+	tr:nth-child(even) {
+		background-color: #efefef;
+	}
+	.infoSection {
+		width: 80%;
+		height: 440px;
+		margin: auto;
+	}
+	.infoOpt {
+		width: 50%;
+		height: 440px;
+		float: left;
+		text-align: left;
+	}
+	input {
+		float: right;
+		margin-right: 45%;
+	}
+	select {
+		float: right;
+		margin-right: 45%;
+		width: 175px;
+	}
+	.infoEx {
+		height: 400px;
+		width: 300px;
+		background-color: #ffffff;
+		float: left;
+		text-align: center;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+	}
+	.footer {
+		width: 100% ;
+		height: 255px ;
+		background-color: #454545;
+		padding-left: 10%;
+	}
+	.botHeader {
+		width: 100%;
+		height: 255px;
+		margin: auto;
+		padding: 10px;
+	}
+	.left {
+		float: left;
+		width: 33%;
+		color: #ffffff;
+	}
+	.link {
+		color: #ffffff;
+	}
+	.footerCentre{
+		float: right;
+		width: 40%;
+	}
