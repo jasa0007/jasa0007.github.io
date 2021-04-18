@@ -21,3 +21,5 @@ var form = document.getElementById("infoBox");
 			province.innerHTML = newProvince.value;
 			postcode.innerHTML = newPostcode.value;
 		}
+
+		

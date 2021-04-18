@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 
 	line-height: 1;
-	 max-width: 2000px;
+	
 	 margin: 0 auto;
 }
 ol, ul {
@@ -44,15 +44,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){ 
 
 }
 
    
 	p {
-		font-family: 'sinkin_sans100_thin';
+		font-family: 'cantarellboldoblique', sans-serif;
 	}
 	.topHeader {
+		font-family: 'cantarellboldoblique', serif;
 		width: 100%;
 	}
 	.mainHeader {
@@ -65,13 +66,19 @@ table {
 		padding-right: 5%;
 	}
 	h1 {
+
+		font-family: 'cantarellboldoblique', serif;
 		margin-left: 5%;
 		color: #72a9ae;
 	}
 	h2 {
+
+		font-family: 'cantarellboldoblique', serif;
 		color: #72a9ae;
 	}
 	h3 {
+
+		font-family: 'cantarellboldoblique', serif;
 		color: #ffffff;
 	}
 	.navigation {
@@ -87,7 +94,7 @@ table {
 	}
 	.navigation:hover {opacity: 1}
 	.NavLink {
-		padding-left: 5%;
+		padding left: 50px: 100%;
 		margin-right: 100px;
 		color: #000000;
 	}
@@ -105,7 +112,7 @@ table {
 	table, td, th {
 		border-collapse: collapse;
 		border: 1px solid black;
-		font-family: sinkin_sans100_thin;
+		font-family: 'cantarellboldoblique', sans-serif;
 		text-align:center;
 	}
 
@@ -158,9 +165,15 @@ table {
 		color: #ffffff;
 	}
 	.link {
-		color: #ffffff;
+		color: #000000;
 	}
 	.footerCentre{
 		float: right;
 		width: 40%;
 	}
+
+
+		body {
+			background: #BBDEFB;
+		}
+ 
