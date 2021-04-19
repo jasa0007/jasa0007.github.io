@@ -1,4 +1,5 @@
-/* Custom, iPhone Retina */ html, body, div, span, applet, object, iframe,
+
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -12,7 +13,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	padding: 0;
+	padding: 1px;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -25,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 
-	line-height: 1;
+	line-height: 2;
 	
 	 margin: 0 auto;
 }
@@ -41,139 +42,267 @@ q:before, q:after {
 	content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	
+.left, img {
+	width:100%;
 }
-@media only screen and (max-width: 768px){ 
+
+/* Header styles */ 
+header {
+	background: #757575;
 
 }
 
+
+
+
+.infoOpt {
+	width: 30%;
+	margin: 1%;
+	height: 150px;
+	background: blue;
+	float: left;
+}
+
+/*footer styles*/
+footer {
+	background: #F44336;
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+
+.navigation {
+	background: #FFEB3B;
+}
+
+.social-media {
+	background: #757575;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	header {
+		background: #FFEB3B;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	
+	
+	header, main, footer {
+
+		max-width: 1280px;
+		margin: 0 auto;
+
+	}
+
+	.navigation {
+		display: block;
+	}
+
+	.left {
+		display: none;
+	}
+	.left {
+		display: none;
+	}
+
+	.navLink {
+		display: none;
+		height: 15px;
+		margin:15px;
+		padding-top: 5px;
+		position: relative;
+		float: right;
+		cursor: pointer;
+	}
+
+	.navLink, .navLink:before, .Navlink:after {
+		width: 30px;
+		border-top: 5px solid black;
+	}
+
+	.navLink:before {
+		content: "";
+		display:block;
+		position: absolute;
+		background: black;
+	}
+
+	.ham:after {
+		content: "";
+		display: block;
+		background: black;
+		position: absolute;
+		bottom: 0;
+	}
+
+	
+
+
+
+	.left {
+		width: 31%;
+		
+		box-sizing: border-box;
+		
+		margin: 0 1%;
+		padding: 10px;
+		float: left;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	footer {
+		background: #FFEB3B;
+	}
+}
    
-	p {
-		font-family: 'cantarellboldoblique', sans-serif;
-	}
-	.topHeader {
-		font-family: 'cantarellboldoblique', serif;
-		width: 100%;
-	}
-	.mainHeader {
-		width: 100%;
-		padding-bottom: 10%;
-		background-image: url("../img/leaves.png");
-	}
-	.paragraph {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
+	
+	/*general look of the logo,*/
 	h1 {
 
-		font-family: 'cantarellboldoblique', serif;
+   	 	font-family: 'cantarellboldoblique';
+   	 	font-size: 25px;
 		margin-left: 5%;
 		color: #72a9ae;
 	}
+	/*general look of the main links*/
+	a.navLink {	
+		color: black;
+		padding-right: 30px;
+		padding-left: 30px;
+		text-decoration: none;
+	}
+	/*general look of the links in the bottom left*/
+	a.navLinkt{
+		color: white;
+		text-decoration: none;
+		font-family: 'Dancing Script', cursive;
+		font-size: 15px
+	}
+	/*general look for header 2*/
 	h2 {
 
-		font-family: 'cantarellboldoblique', serif;
+		font-family: 'Dancing Script', cursive;
 		color: #72a9ae;
 	}
+	/*general look for header 3*/
 	h3 {
 
-		font-family: 'cantarellboldoblique', serif;
+		font-family: 'Dancing Script', cursive;
 		color: #ffffff;
 	}
-	.navigation {
-		width: 100%;
-		height: 35px;
-		background-color: #72a9ae ;
-		padding-top: 1%;
-		text-align: left;
-		  font-size: 16px;
-		  margin: 4px 2px;
-		  opacity: 0.6;
-		  transition: 0.3s;
+	/*general look for paragraphs*/
+	p {
+		font-family: 'Dancing Script', cursive;
 	}
-	.navigation:hover {opacity: 1}
-	.NavLink {
-		padding left: 50px: 100%;
-		margin-right: 100px;
-		color: #000000;
-	}
-	.image {
-		height: 300px;
-		width: 30%;
-		float: right;
-		padding: 10px;
-	}
-
-	.image.hover {
-		height: 500px;
-		width: 50%;
-	}
+	/*general look for table*/
 	table, td, th {
 		border-collapse: collapse;
 		border: 1px solid black;
-		font-family: 'cantarellboldoblique', sans-serif;
+		font-family: 'Dancing Script', cursive;
 		text-align:center;
 	}
-
+	/*create the colour of even set of rows*/
 	tr:nth-child(even) {
 		background-color: #efefef;
 	}
-	.infoSection {
-		width: 80%;
-		height: 440px;
-		margin: auto;
-	}
-	.infoOpt {
-		width: 50%;
-		height: 440px;
-		float: left;
-		text-align: left;
-	}
+	/*general look for input bars*/
 	input {
 		float: right;
 		margin-right: 45%;
 	}
+	/*general look for selection bar*/
 	select {
 		float: right;
 		margin-right: 45%;
 		width: 175px;
 	}
+	/*general look for info fonts*/
+	strong{
+		font-family: 'Dancing Script', cursive;
+	}
+	/*box of navigation*/
+	.navigation {
+		width: 100%;
+		height: 35px;
+		background-color: #72a9ae ;
+		padding-top: 0.5%;
+		text-align: left;
+		font-size: 16px;
+		margin: 4px 2px;
+		opacity: 0.6;
+		transition: 0.3s;
+	}
+	/*navigation in hover setting*/
+	.navigation:hover {opacity: 1}
+	/*placement of the image*/
+	.image {
+		float: right;
+		padding: 10px;
+	}
+
+	/*box of the main header*/
+	.mainHeader {
+		width: 100%;
+		padding-bottom: 10%;
+		background-image: url("../img/leaves.png");
+	}
+	/*box for the paragraph*/
+	.paragraph {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	/*box for the info section*/
+	.infoSection {
+		width: 80%;
+		height: 440px;
+		margin: auto;
+	}
+	/*box for the info options*/
+	.infoOpt {
+		width: 40%;
+		height: 440px;
+		float: left;
+		text-align: left;
+	}
+	/*placement of info example*/
 	.infoEx {
 		height: 400px;
 		width: 300px;
 		background-color: #ffffff;
 		float: left;
 		text-align: center;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+
+		box-shadow: 0 5px 10px 5px lightgrey, 0 5px 10px 5px lightgrey;
 	}
+	/*box for footer*/
 	.footer {
 		width: 100% ;
 		height: 255px ;
 		background-color: #454545;
-		padding-left: 10%;
 	}
+	/*box for bottom header*/
 	.botHeader {
 		width: 100%;
 		height: 255px;
 		margin: auto;
 		padding: 10px;
 	}
+	/*box for links and infos on the footer*/
 	.left {
 		float: left;
-		width: 33%;
+		width: 30%;
 		color: #ffffff;
 	}
-	.link {
-		color: #000000;
-	}
-	.footerCentre{
-		float: right;
-		width: 40%;
-	}
 
+	
 
-		body {
-			background: #BBDEFB;
-		}
+		
  

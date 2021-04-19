@@ -1,25 +1,29 @@
 var form = document.getElementById("infoBox"); 
-		function handleForm(event) { event.preventDefault(); } 
-		form.addEventListener('submit', handleForm);
-		function javascriptInteractivity(){
-			var name = document.getElementById('name');
-			var email = document.getElementById('email');
-			var address = document.getElementById('address');
-			var city = document.getElementById('city');
-			var province = document.getElementById('province');
-			var postcode = document.getElementById('postcode');
-			var newName = document.getElementById('inputName');
-			var newEmail = document.getElementById('inputEmail');
-			var newAddress = document.getElementById('inputAddress');
-			var newCity = document.getElementById('inputCity');
-			var newProvince = document.getElementById('inputProvince');
-			var newPostcode = document.getElementById('inputPostCode');
-			name.innerHTML = newName.value;
-			email.innerHTML = newEmail.value;
-			address.innerHTML = newAddress.value;
-			city.innerHTML = newCity.value;
-			province.innerHTML = newProvince.value;
-			postcode.innerHTML = newPostcode.value;
-		}
+
+function formSubmiter(event) {event.preventDefault();} 
+
+form.addEventListener('submit', formSubmiter);
+
+function variableHandalerJS(){
+	var name = document.getElementById('name');
+	var email = document.getElementById('email');
+	var address = document.getElementById('address');
+	var city = document.getElementById('city');
+	var province = document.getElementById('province');
+	var postCode = document.getElementById('postCode');
+	var changedName = document.getElementById('userName');
+	var changedEmail = document.getElementById('userEmail');
+	var changedAddress = document.getElementById('userAddress');
+	var changedCity = document.getElementById('userCity');
+	var changedProvince = document.getElementById('userProvince');
+	var changedPostCode = document.getElementById('userPostCode');
+
+name.innerHTML = changedName.value;
+email.innerHTML = changedEmail.value;
+address.innerHTML = changedAddress.value;
+city.innerHTML = changedCity.value;
+province.innerHTML = changedProvince.value;
+postCode.innerHTML = changedPostCode.value;
+	}
 
 		
