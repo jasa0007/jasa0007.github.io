@@ -43,127 +43,12 @@ q:before, q:after {
 }
 table {
 	
-.left, img {
-	width:100%;
 }
-
-/* Header styles */ 
-header {
-	background: #757575;
+@media only screen and (max-width: 768px){ 
 
 }
 
-
-
-
-.infoOpt {
-	width: 30%;
-	margin: 1%;
-	height: 150px;
-	background: blue;
-	float: left;
-}
-
-/*footer styles*/
-footer {
-	background: #F44336;
-	padding: 15px;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-
-
-.navigation {
-	background: #FFEB3B;
-}
-
-.social-media {
-	background: #757575;
-}
-
-
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-	header {
-		background: #FFEB3B;
-	}
-}
-
-
-@media only screen and (min-width: 768px) {
-	
-	
-	header, main, footer {
-
-		max-width: 1280px;
-		margin: 0 auto;
-
-	}
-
-	.navigation {
-		display: block;
-	}
-
-	.left {
-		display: none;
-	}
-	.left {
-		display: none;
-	}
-
-	.navLink {
-		display: none;
-		height: 15px;
-		margin:15px;
-		padding-top: 5px;
-		position: relative;
-		float: right;
-		cursor: pointer;
-	}
-
-	.navLink, .navLink:before, .Navlink:after {
-		width: 30px;
-		border-top: 5px solid black;
-	}
-
-	.navLink:before {
-		content: "";
-		display:block;
-		position: absolute;
-		background: black;
-	}
-
-	.ham:after {
-		content: "";
-		display: block;
-		background: black;
-		position: absolute;
-		bottom: 0;
-	}
-
-	
-
-
-
-	.left {
-		width: 31%;
-		
-		box-sizing: border-box;
-		
-		margin: 0 1%;
-		padding: 10px;
-		float: left;
-	}
-}
-
-
-@media only screen and (max-width: 768px) {
-	footer {
-		background: #FFEB3B;
-	}
-}
    
-	
 	/*general look of the logo,*/
 	h1 {
 
@@ -296,13 +181,13 @@ footer {
 		padding: 10px;
 	}
 	/*box for links and infos on the footer*/
-	.left {
+	.foot {
 		float: left;
 		width: 30%;
 		color: #ffffff;
 	}
 
-	
+	/*I forgot to make it into mobile format and found out too late, so I choose to not do due to the big change in a limited time*/
 
 		
  
